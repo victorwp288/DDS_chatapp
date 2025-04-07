@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "DDS_chatapp",
-    "slug": "DDS_chatapp",
+    "slug": "ddschatapp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -23,6 +23,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "f1fdb0ff-b5cc-4d2a-93d6-04873f5fd181"
+      }
+    },
+    "owner": "larsallan"
   }
 }
