@@ -25,11 +25,6 @@
       "bundler": "metro",
       "favicon": "./assets/favicon.png"
     },
-    "extra": {
-      "eas": {
-        "projectId": "f1fdb0ff-b5cc-4d2a-93d6-04873f5fd181"
-      }
-    },
     "owner": "larsallan"
   }
 }
