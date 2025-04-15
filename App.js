@@ -3,6 +3,8 @@ import { Button, StyleSheet, Text, View,TextInput,Alert,TouchableOpacity } from 
 import { SafeAreaView } from "react-native-safe-area-context";
 import "./globals.css";
 import React, {useState} from 'react';
+import {sum,sub,mult} from './crypto.js';
+
 
 
 export default function App() {
@@ -95,18 +97,19 @@ export default function App() {
     },
   });
   const shoot = () => {
+    var outV=0;
     if(inputValues.field1==''||inputValues.field2==''||selectedValue==0)
       Alert.alert('Simple Button pressed');
     else
       if(selectedValue==1)
-        var sum=parseInt(inputValues.field2,10)+parseInt(inputValues.field1,10);
+        outV=sum(inputValues.field1,inputValues.field2);
       else if(selectedValue==2)
-        var sum=parseInt(inputValues.field1,10)-parseInt(inputValues.field2,10);
+        outV=sub(inputValues.field1,inputValues.field2);
       else if(selectedValue==3)
-        var sum=parseInt(inputValues.field2,10)*parseInt(inputValues.field1,10);
+        outV=mult(inputValues.field1,inputValues.field2);
       setInputValues(prevValues => ({
         ...prevValues,         // Keep previous values for other fields
-        field3: sum, // Update the target field dynamically
+        field3: outV, // Update the target field dynamically
       }));
 
   }
