@@ -16,15 +16,20 @@
       "supportsTablet": true
     },
     "android": {
+      "newArchEnabled": false,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#ffffff",
+        
       }
     },
     "web": {
       "bundler": "metro",
       "favicon": "./assets/favicon.png"
     },
-    "owner": "larsallan"
+    "owner": "larsallan",
+    "plugins": [
+      "expo-secure-store"
+    ]
   }
 }

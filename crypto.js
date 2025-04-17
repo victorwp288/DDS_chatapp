@@ -1,3 +1,4 @@
+import { initializeKeys } from './keyGeneration';
 async function sum(number1, number2) {
     //const encoder = new TextEncoder();
     /*const messageToSign = encoder.encode(
@@ -23,8 +24,21 @@ async function sum(number1, number2) {
 
   }
   async function mult(number1, number2) {
-
-    return await parseInt(number1,10)*parseInt(number2,10);
+    try {
+      const keys = await initializeKeys();
+      console.log('Keys generated:', keys);
+      return keys;
+    } catch (error) {
+      console.error('Key generation failed:', error);
+      return error;
+    }
+  
+    
 
   }
   export {sum,sub,mult};
+
+  
+
+
+  
