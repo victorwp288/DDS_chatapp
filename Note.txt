@@ -1,0 +1,9 @@
+npm install
+npx expo install expo-secure-store 
+npm install signal-protocol-react-native 
+npm install 
+npm install buffer 
+npm install react-native-get-random-values 
+npm install process
+npm install @peculiar/webcrypto
+

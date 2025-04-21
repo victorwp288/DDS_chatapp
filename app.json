@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "DDS_chatapp",
-    "slug": "ddschatapp",
+    "name": "dds-chatapp",
+    "slug": "snack-ded34fb0-de1e-4b12-9ae8-df8bd37f7e7a",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -16,18 +16,14 @@
       "supportsTablet": true
     },
     "android": {
-      "newArchEnabled": false,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff",
-        
+        "backgroundColor": "#ffffff"
       }
     },
     "web": {
-      "bundler": "metro",
       "favicon": "./assets/favicon.png"
     },
-    "owner": "larsallan",
     "plugins": [
       "expo-secure-store"
     ]
