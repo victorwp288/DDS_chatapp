@@ -25,6 +25,10 @@
       "bundler": "metro",
       "favicon": "./assets/favicon.png"
     },
-    "owner": "larsallan"
+    "owner": "larsallan",
+    "plugins": [
+      "expo-router",
+      "expo-secure-store"
+    ]
   }
 }
